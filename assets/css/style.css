@@ -80,6 +80,12 @@ header p {
     font-weight: 300;
     opacity: 0.9;
     margin-bottom: 35px;
+
+    max-width: 650px;   /* ⬅️ THIS fixes your issue */
+    margin-left: auto;  /* ⬅️ centers it */
+    margin-right: auto; /* ⬅️ centers it */
+    line-height: 1.6;
+}
 }
 
 /* --- 3.5 Social Icons --- */
