@@ -239,6 +239,9 @@ nav ul li a:hover::after {
     color: var(--light-text-color);
     margin-bottom: 30px;
     flex-grow: 1;
+
+    max-width: 650px;   /* ⬅️ controls paragraph length */
+    line-height: 1.6;   /* ⬅️ improves readability */
 }
 
 .project-buttons {
