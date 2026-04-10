@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project One Documentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <section class="project-doc">
+    <h1>Surrey Housing Analysis </h1>
+    <p>This project analysis aims to explore housing trends across local authorities in Surrey using publicly available datasets. It focuses on key metrics such as rental prices, housing tenure, affordability, and 
+homelessness to better understand housing pressure and market differences.
+
+The project examines these through data cleaning, data processing, modelling, and clear visualisation, allowing decisions to be made with confidence.</p>
+
+     <h1>Dashboard </h1>
+    <img src="assets/Images/Surrey Housing/Housing dashboard .png" width="1600">
+   
+
+<!--💡INSIGHT 1 -->
+    
+  <h1>Letting </h1>
+     <img src="assets/Images/Surrey Housing/Letting .png" alt="Chart showing sales trend" width="1600">
+
+
+ <!--💡INSIGHT 2 -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ <h1>Homelessness</h1>
+     <img src="assets/Images/Surrey Housing/Homelessness.png" alt="Chart showing sales trend" width="1600">
+
+ <!--💡INSIGHT  -->>>>>>>3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ <h1>Affordability</h1>
+     <img src="assets/Images/Surrey Housing/affordability .png" alt="Chart showing sales trend" width="1600">
+
+<br><br>
+    <a href="index.html">← Back to Portfolio</a>
+  </section>
+
+</body>
+</html>
