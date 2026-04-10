@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project One Documentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="project-doc">
+    <h1>Bank Loan Insights </h1>
+    <p>This project analyzes loan application data to understand the factors involved in loan approval decisions. 
+      It looks at variables such as credit score, debt-to-income ratio, loan amount, and applicant characteristics 
+      to explore how applications differ across the dataset and what lenders take into account when assessing them.</p>
+
+     <h1>Dashboard </h1>
+    <img src="assets/Images/Bank loan/Bank loan Dashboard.png" width="1600">
+   
+
+<!--💡INSIGHT 1 -->
+    
+  <h1>Credit Risk and Affordability</h1>
+     <img src="assets/Images/Bank loan/approval rate by debt to income.png" alt="Chart showing sales trend" width="900">
+
+    <h3>Key Insights</h3>
+    <ul>
+      <li>Strong negative relationship:   As debt-to-income (DTI) goes up, approval rates drop pretty quickly. It’s one of the strongest trends in the data.</li>
+      <li>High approval “safe zone”:   between about 0.05 and 0.30, where approval rates stay relatively high (around 60–75%) and don’t change much.</li>
+      <li>Tipping point around 0.35–0.40:   After this point, approvals begin to fall off more noticeably, which suggests a likely cutoff used in decision-making.</li>
+      <li>Steep drop beyond 0.45:   Once DTI exceeds 0.45, approval rates fall significantly (~20%–40%) and become more volatile.</li>
+      <li>Zone 0.50 is highly risky:  At DTI above 0.50, approval rates drop to 10%–25%, indicating that applications in this range are rarely approved.</li>
+      <li>Low DTI variability:  At very low DTI levels (below 0.05), approval rates vary more. This suggests that other factors, such as credit score or income, may have a stronger influence in these cases. </li>
+      <li>Non-linear relationship: The decline is not gradual, t shows a threshold effect, meaning lenders treat DTI as a cutoff-based rule, not just a continuous factor.</li>
+    </ul>
+
+    
+     <img src="assets/Images/Bank loan/chart. DTI vs CS.png" alt="Chart showing sales trend" width="900">
+
+    <h3>Key Insights</h3>
+    <ul>
+      <li>Clear approval split: Approved applications cluster around higher average credit scores and lower average debt-to-income (DTI), while rejected applications cluster around lower scores and higher DTI.</li>
+      <li>DTI looks like a major rejection trigger: Rejected groups sit roughly in the 0.31–0.41 DTI range, versus approved groups around 0.22–0.25, suggesting lenders are strongly penalizing heavier debt burden.</li>
+      <li>Credit score rises with age: Older age bands generally show higher average credit scores, which suggests longer credit history and stronger repayment profiles.</li>
+      <li>Older applicants also carry larger financial exposure: The larger bubbles for 45–54 and 55+ age groups show they tend to request bigger loan amounts.</li>
+      <li>Higher score alone does not guarantee approval: Some older groups have stronger average credit scores, but when DTI is high, they still appear in the rejected cluster. This suggests the decision is based on a combination of score and affordability, not score alone.</li>
+      <li>Younger applicants appear weaker on both dimensions: The Under 25 and 25–34 age groups sit at lower average scores and, in the rejected cluster, relatively elevated DTI, making them more vulnerable to denial. </li>
+      <li>Approved older applicants still keep DTI controlled: Even when approved applicants are older and ask for larger loans, their average DTI stays relatively low. That suggests affordability discipline is key.</li>
+    </ul>
+	  
+    <h3>Recmendations</h3>
+    <ul>
+      <li>Introduce a “second-chance” pathway for near-declines:  Instead of a hard reject, route borderline applicants into a separate track (e.g., manual review, financial coaching, or conditional approval).This helps recover potentially good customers who just miss standard criteria.</li> 
+	  <li>Use age-based segmentation in your strategy:   Younger applicants show weaker profiles, while older groups perform better. Tailor products accordingly (e.g., starter loans for younger users, higher limits for older, stable borrowers) This aligns lending strategy with real behavioral differences in your data.</li>
+	  <li>Apply dynamic loan limits based on risk profile:   Rather than a fixed approval/decline decision, vary the loan amount based on risk (for example credit score + DTI). High-risk applicants get smaller exposure, reducing losses while still enabling approvals.</li>
+
+ </ul>
+	  
+
+ <!--💡INSIGHT 2 -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    
+  <h1>Employement Factors</h1>
+     <img src="assets/Images/Bank loan/apllications job status.png" alt="Chart showing sales trend" width="900">
+     <img src="assets/Images/Bank loan/product per occupation.png" alt="Chart showing sales trend" width="900">
+
+    <h3>Key Insights</h3>
+    <ul>
+      <li>Applicant mix is heavily skewed toward employed individuals: Around 70% of applicants are employed, compared to ~20% self-employed and ~10% students. This means most overall approval trends and portfolio performance are driven by the employed segment, making it the core customer base.</li>
+      <li>Students have the highest approval rates for credit cards: Students outperform other groups in Credit Card approvals (~75%). This suggests lenders treat credit cards as a low-risk, entry-level product for individuals with limited credit history.</li>
+      <li>Students struggle with larger or longer-term products: Approval rates drop significantly for Personal Loans and Lines of Credit among students. This indicates that lenders perceive students as higher risk for larger financial commitments, likely due to lower income and shorter credit history.</li>
+      <li>Self-employed applicants show mixed and less predictable outcomes: Approval rates are moderate across all products, without clear dominance in any category. This likely reflects income variability and less stable financial profiles, which increases uncertainty in lending decisions.</li>
+      <li>Employed applicants are the most stable and consistent segment: Approval rates are relatively even across all product types (~55–65%). This consistency suggests that steady employment provides reliable income signals, making this group the most predictable for lenders.</li>
+      <li>Clear product risk hierarchy across all segments: 
+						Credit Cards → highest approval rates
+						Lines of Credit → moderate			
+						Personal Loans → lowest approval rates</li>
+     </ul>
+
+    <h3>Recmendations</h3>
+    <ul>
+      <li>Expand credit card offerings for students:  Since students already show high approval rates, introduce tailored products (e.g., low-limit or starter cards). This builds early customer relationships with controlled risk.</li> 
+	  <li>Design flexible products for self-employed applicant:  Offer products with adaptable repayment structures (e.g., Lines of Credit). it Better aligns with their income patterns and improves approval performance.</li>
+	  <li>Leverage employed segment for growth and upselling:  As the largest and stable group, target them with higher-value products or cross-sell opportunities. Maximizes revenue from the most reliable segment.</li>
+ </ul>
+	  
+
+ <!--💡INSIGHT 3 -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+  <h1>Approval Drivers: Credit Score & Loan Burden</h1>
+     <img src="assets/Images/Bank loan/aproval rate by CS.png" alt="Chart showing sales trend" width="900">
+
+    <h3>Key Insights</h3>
+    <ul>
+	  <li>Approval rate strongly increases with credit score: Clear upward trend from Poor (25%) → Fair (55%) → Good (75%) → Very Good (85%) → Excellent (90%)</li>
+	  <li>Big jump between Poor and Fair segments: Moving from Poor to Fair nearly doubles approval probability which Suggests a minimum threshold effect where very low scores are heavily penalized</li>
+	  <li>Diminishing gains at higher scores: Improvement from Very Good to Excellent is relatively small. This Indicates lenders may treat high-score applicants similarly once a “safe” level is reached.</li>
+	</ul>
+
+		<img src="assets/Images/Bank loan/loan to income ratio.png" alt="Chart showing sales trend" width="900">
+
+    <h3>Key Insights</h3>
+    <ul>
+	  <li>Most applicants fall in a moderate range: The majority are concentrated between ~0.1 and 0.6 loan-to-income ratio, Indicating most borrowers request loans that are reasonable relative to their income.</li>
+	  <li>Peak concentration around mid-low ratios: Highest bars appear roughly between 0.2 and 0.5 which Suggests this is the typical borrowing behaviour in your dataset.</li>
+	  <li>Gradual decline as ratio increases: As loan-to-income rises beyond 0.6–0.8, the number of applicants steadily decreases.</li>
+	  <li>Sharp drop-off in high-risk ranges: Very few applicants above 1.2–1.5 which Indicates fewer people attempt (or qualify for) high leverage loans.</li>
+		     <li>Long right tail (high-risk segment exists):Some applicants reach ratios close to 2.0, Representing a small but potentially risky group</li>	
+    </ul>
+
+	<h3>Recmendations</h3>
+    <ul>
+      <li>Prioritize high credit score segments for approvals and growth:   Applicants in the higher credit bands have the strongest approval rates, which suggests they are lower-risk and more reliable borrowers. This makes them a strong target for faster approvals, premium products, and portfolio growth.</li> 
+	  <li>Set stricter controls for high loan-to-income ratios (>1.0):   When the loan amount approaches or exceeds annual income, repayment risk becomes much higher. These applicants should face tighter review standards, such as stronger credit requirements, lower approved amounts, or additional verification.</li>
+	  <li>Optimize offers for mid-range applicants (0.2–0.6 ratio):    Most applicants fall within this range, making it the biggest opportunity area. Tailoring pricing, loan amounts, and product terms for this group can improve approval volume while keeping risk at a manageable level.</li>
+ </ul>
+
+<h1>Overall Recommendation</h1>
+	 <h3>Implement a fully segmented, risk-based lending strategy that tailors decisions and products based on credit score, debt-to-income, loan-to-income, and applicant profile.</h3>
+    <ul>
+	  <li>Grow safely by prioritizing strong profiles:   Target applicants with high credit scores, low DTI, and stable employment (especially older segments) for higher approvals and premium products.<li>
+	  <li>Control risk using clear thresholds and combined metrics:   Use credit score + DTI + loan-to-income together to identify high-risk applicants and apply stricter approval rules where needed.<li>
+	  <li>Maximize approvals through tailored offers and segmentation:   Adjust loan terms, amounts, and products based on applicant type (e.g., students, self-employed, younger applicants) instead of using a single approval rule.<li>
+
+	<h3>Overall, the goal is to balance growth and risk by making smarter, data-driven decisions tailored to each applicant segment.</h3>	  
+    <ul>
+
+<br><br>
+    <a href="index.html">← Back to Portfolio</a>
+  </section>
+
+</body>
+</html>
